@@ -11,12 +11,12 @@
             <div class="input-card">
             <div class="input-container">
                     <label class="input-description">Nome do usuário</label>
-                <input class="input-field" type="text" placeholder="Digite o seu nome de usuário">
+                <input [(ngModel)]="this.username" class="input-field" type="text" placeholder="Digite o seu nome de usuário">
                 <mat-icon class="person-icon">person</mat-icon>
             </div>
             <div class="input-container">
                 <label class="input-description" >Senha</label>
-                <input #passwordField class="input-field" [type]="hide ? 'password' : 'text'" placeholder="Digite o sua senha atual">
+                <input #passwordField [(ngModel)]="this.password" class="input-field" [type]="hide ? 'password' : 'text'" placeholder="Digite o sua senha atual">
                 <mat-icon class="key-password-icon">vpn_key</mat-icon>
                 <mat-icon (click)="setHide(); passwordField.setSelectionRange(passwordField.value.length, passwordField.value.length); passwordField.focus();" class="hide-password-icon">remove_red_eye</mat-icon>
                 <div class="link-container">
@@ -26,7 +26,7 @@
         </div>
         <div class="buttons-container">
             <a class="signup-link" href="/signup">Cadastre-se</a>
-            <button class="login-button">Continuar</button>
+            <button class="login-button" (click)="login()">Continuar</button>
         </div>
     </div>
 </div>

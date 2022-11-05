@@ -73,7 +73,10 @@ mat-icon {
     position: absolute;
     top: 35%;
     color: #1351B4;
-    right: 5%;
+    right: 4%;
+}
+.hide-password-icon:hover {
+    opacity: 0.8;
 }
 .person-icon {
     margin-left: 10px;
@@ -92,6 +95,13 @@ mat-icon {
     border-radius: 25px;
     padding: 10px 40px;
     margin-right: 20px;
+    transition: all ease-in 0.3s;
+}
+.signup-link:hover, .login-button:hover {
+    opacity: 0.8;
+}
+.signup-link:hover {
+    border: 1px solid #1351b4a4;
 }
 .login-button {
     cursor: pointer;

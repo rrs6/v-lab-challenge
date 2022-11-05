@@ -1,0 +1,24 @@
+<div class="home-container">
+    <div class="card-home">
+        <div class="user-info-container">
+            <h1>Informações do usuário</h1>
+            <div class="field-info">
+                <label class="description-field">Nome do Usuário: </label>
+                <p>{{this.userData?.username}}</p>
+            </div>
+            <div class="field-info">
+                <label class="description-field">Email: </label>
+                <p>{{this.userData?.email}}</p>
+            </div>
+            <div class="field-info">
+                <label class="description-field">Instituição: </label>
+                <p>{{this.userData?.institution}}</p>
+            </div>
+            <div class="field-info">
+                <label class="description-field">Role: </label>
+                <p>{{this.userData?.role}}</p>
+            </div>
+            <button class="logout" (click)="logout()">Logout</button>
+        </div>
+    </div>
+</div>
