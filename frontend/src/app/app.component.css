@@ -1,0 +1,17 @@
+.navbar {
+    z-index: 20;
+}
+.content {
+    z-index: 1;
+    padding-top: 11%;
+}
+.footer{
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 1px solid #cecece69;;
+    text-align: center;
+}
+/* .container {
+    width: 100%;
+    height: 100%;
+} */

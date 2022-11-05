@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="signup-container">
+        <h2 class="title-signup">Cadastro do Usuário</h2>
+        <div class="signup-card-container">
+            <div class="input-container">
+                <label class="input-description">Nome do usuário</label>
+                <input class="input-field" type="text" placeholder="Escolha o seu nome de usuário">
+                <mat-icon class="person-icon">person</mat-icon>
+            </div>
+            <div class="input-container">
+                <label class="input-description">Email</label>
+                <input class="input-field" type="text" placeholder="Digite o seu email">
+                <mat-icon class="person-icon">email</mat-icon>
+            </div>
+            <div class="input-container">
+                <label class="input-description">Email</label>
+                <input class="input-field" type="text" placeholder="Digite novamente o seu email">
+                <mat-icon class="person-icon">email</mat-icon>
+            </div>
+            <div class="input-container">
+                <label class="input-description">Instituição</label>
+                <input class="input-field" type="text" placeholder="Digite o nome de sua instituição">
+                <mat-icon class="person-icon">business</mat-icon>
+            </div>
+            <div class="input-container">
+                <label class="input-description">Cargo</label>
+                <input class="input-field" type="text" placeholder="Selecione seu cargo">
+                <mat-icon class="person-icon">search</mat-icon>
+            </div>
+            <div class="input-container">
+                <label class="input-description" >Senha</label>
+                <input #passwordField class="input-field" [type]="hide ? 'password' : 'text'" placeholder="Digite o sua senha atual">
+                <mat-icon class="key-password-icon">vpn_key</mat-icon>
+                <mat-icon (click)="setHide(); passwordField.setSelectionRange(passwordField.value.length, passwordField.value.length); passwordField.focus();" class="hide-password-icon">remove_red_eye</mat-icon>
+            </div>
+            <div class="input-container">
+                <label class="input-description" >Confirme a sua senha</label>
+                <input #confirmPasswordField class="input-field" [type]="hide ? 'password' : 'text'" placeholder="Digite novamente a senha escolhida">
+                <mat-icon class="key-password-icon">vpn_key</mat-icon>
+                <mat-icon (click)="setHide(); confirmPasswordField.setSelectionRange(confirmPasswordField.value.length, confirmPasswordField.value.length); confirmPasswordField.focus();" class="hide-password-icon">remove_red_eye</mat-icon>
+            </div>
+            <div class="terms-container">
+                <input class="checkbox-signup" type="checkbox" id="agreeTerms" name="agreeTerms">
+                <label class="agreeTerms" for="agreeTerms">Aceito o <a href="#">Termos de Uso e Política de Privacidade</a></label>
+            </div>
+            <div class="buttons-container">
+                <a class="cancel" href="#">Cancelar</a>
+                <button class="signup-button">Continuar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="content-login">
+    <h2 class="title-login">Login do Usuário</h2>
+    <div class="login-container">
+        <div class="icon-container">
+            <img class="img-login" src="../../../../assets/img/landing-background.jpg" alt="image">
+        </div>
+        <div class="login-card">
+            <div class="title-card">
+                <h2>Identifique-se com:</h2>
+            </div>
+            <div class="input-card">
+            <div class="input-container">
+                    <label class="input-description">Nome do usuário</label>
+                <input class="input-field" type="text" placeholder="Digite o seu nome de usuário">
+                <mat-icon class="person-icon">person</mat-icon>
+            </div>
+            <div class="input-container">
+                <label class="input-description" >Senha</label>
+                <input #passwordField class="input-field" [type]="hide ? 'password' : 'text'" placeholder="Digite o sua senha atual">
+                <mat-icon class="key-password-icon">vpn_key</mat-icon>
+                <mat-icon (click)="setHide(); passwordField.setSelectionRange(passwordField.value.length, passwordField.value.length); passwordField.focus();" class="hide-password-icon">remove_red_eye</mat-icon>
+                <div class="link-container">
+                    <a href="#" class="forget-link">Esqueci minha senha</a>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <a class="signup-link" href="/signup">Cadastre-se</a>
+            <button class="login-button">Continuar</button>
+        </div>
+    </div>
+</div>
+</div>
